@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroAvançado | Tecnologia e Produtividade em Soja e Milho</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="accessibility-bar" role="complementary" aria-label="Ferramentas de Acessibilidade">
+        <div class="container accessibility-container">
+            <span>Acessibilidade:</span>
+            <button id="btn-font-decrease" aria-label="Diminuir tamanho da fonte">A-</button>
+            <button id="btn-font-increase" aria-label="Aumentar tamanho da fonte">A+</button>
+            <button id="btn-contrast" aria-label="Alternar Alto Contraste"><i class="fa-solid to-contrast fa-eye"></i> Alto Contraste</button>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <nav class="container nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-seedling icon"></i> Agro<span>Avançado</span>
+            </div>
+            <a href="#contato" class="btn btn-secondary">Falar com Consultor</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">Alta Produtividade Safra 2026</span>
+                <h1>Maximize a sua colheita de <span class="highlight">Soja e Milho</span> com biotecnologia pura</h1>
+                <p>Implemente as estratégias de manejo, nutrição e proteção de solo que estão quebrando recordes de sacas por hectare no Brasil.</p>
+                <div class="hero-actions">
+                    <a href="#contato" class="btn btn-primary">Garantir Diagnóstico Gratuito</a>
+                </div>
+            </div>
+            <div class="hero-image-placeholder">
+                <i class="fa-solid fa-tractor main-hero-icon icon"></i>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title">Por que grandes produtores escolhem nossa tecnologia?</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-chart-line icon"></i></div>
+                    <h3>Biotecnologia em Soja</h3>
+                    <p>Variedades com máxima resistência a estresses hídricos e proteção total contra lagartas e pragas foliares.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-wheat-awn icon"></i></div>
+                    <h3>Híbridos de Milho Alta Performance</h3>
+                    <p>Arrancada vigorosa com altíssimo potencial produtivo e excelente sanidade de colmo e raiz para safrinha.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-droplet icon"></i></div>
+                    <h3>Manejo de Precisão</h3>
+                    <p>Análise detalhada de dados para otimização da aplicação de insumos, gerando economia e sustentabilidade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="carousel-section">
+        <div class="container">
+            <h2 class="section-title">Resultados Reais no Campo</h2>
+            <div class="carousel-container">
+                <div id="carousel-track" class="carousel-track">
+                    </div>
+                <div class="carousel-nav">
+                    <button id="carousel-prev" aria-label="Depoimento anterior"><i class="fa-solid fa-chevron-left icon"></i></button>
+                    <button id="carousel-next" aria-label="Próximo depoimento"><i class="fa-solid fa-chevron-right icon"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container small-container">
+            <h2 class="section-title">Perguntas Frequentes sobre nosso Manejo</h2>
+            <div id="faq-accordion" class="accordion">
+                </div>
+        </div>
+    </section>
+
+    <section id="contato" class="cta-section">
+        <div class="container small-container text-center">
+            <h2>Transforme a realidade da sua lavoura hoje</h2>
+            <p>Inscreva-se abaixo para receber uma consultoria técnica especializada e descobrir o potencial produtivo oculto do seu solo.</p>
+            <form class="lead-form" onsubmit="event.preventDefault(); alert('Solicitação enviada com sucesso! Nossa equipe técnica entrará em contato em até 24 horas.');">
+                <div class="form-group">
+                    <label for="name">Nome Completo</label>
+                    <input type="text" id="name" placeholder="Digite seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefone / WhatsApp</label>
+                    <input type="tel" id="phone" placeholder="(00) 00000-0000" required>
+                </div>
+                <div class="form-group">
+                    <label for="hectares">Área Total Disponível (Hectares)</label>
+                    <input type="number" id="hectares" placeholder="Ex: 500" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Solicitar Atendimento Técnico</button>
+            </form>
+            <p class="scarcity-text"><i class="fa-solid fa-clock icon"></i> Vagas limitadas para atendimento gratuito nesta região nesta semana.</p>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container text-center">
+            <p>&copy; 2026 AgroAvançado Tecnologia Agrícola S.A. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
